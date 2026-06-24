@@ -26,15 +26,7 @@
     
     { "name": "Alteza, Emanuel John Garcia", "role": "ICT Student", "skills": ["Skills"], "bio": "Random.", "links": [{ "label": "Facebook", "url": "https://www.facebook.com/share/1BNh1LRK83/" }, {"label": "Instagram", "url": "https://www.instagram.com/spottedmilkshake?igsh=YWg5N3ExeW82Z2dp"}] },
     
-    { "name": "Bayland, Abraham", "role": "ICT Student", "skills": ["Data Analyst", "System Specialist", "Student-leader", "Programmer", "Computer Specialist"], "bio": "Go lang ng Go!", "links": [{ "label": "Facebook", "url": "https://www.facebook.com/avebayland/" }, {"label": "Instagram", "url": "https://www.instagram.com/avebayland"}] },
-    
-    { "name": "Nabokiag, Gabrielle Keith Annogui", "role": "ICT Student", "skills": ["Artist", "Computer Specialist"], "bio": "Random.", "links": [{ "label": "Facebook", "url": "https://www.facebook.com/share/1BNh1LRK83/" }, {"label": "Instagram", "url": "https://www.instagram.com/spottedmilkshake?igsh=YWg5N3ExeW82Z2dp"}] },
-    
-    { "name": "Nabokiag, Gabrielle Keith Annogui", "role": "ICT Student", "skills": ["Artist", "Computer Specialist"], "bio": "Random.", "links": [{ "label": "Facebook", "url": "https://www.facebook.com/share/1BNh1LRK83/" }, {"label": "Instagram", "url": "https://www.instagram.com/spottedmilkshake?igsh=YWg5N3ExeW82Z2dp"}] },
-    
-    { "name": "Nabokiag, Gabrielle Keith Annogui", "role": "ICT Student", "skills": ["Artist", "Computer Specialist"], "bio": "Random.", "links": [{ "label": "Facebook", "url": "https://www.facebook.com/share/1BNh1LRK83/" }, {"label": "Instagram", "url": "https://www.instagram.com/spottedmilkshake?igsh=YWg5N3ExeW82Z2dp"}] },
-    
-    { "name": "Nabokiag, Gabrielle Keith Annogui", "role": "ICT Student", "skills": ["Artist", "Computer Specialist"], "bio": "Random.", "links": [{ "label": "Facebook", "url": "https://www.facebook.com/share/1BNh1LRK83/" }, {"label": "Instagram", "url": "https://www.instagram.com/spottedmilkshake?igsh=YWg5N3ExeW82Z2dp"}] }
+    { "name": "Bayland, Abraham", "role": "ICT Student", "skills": ["Data Analyst", "System Specialist", "Student-leader", "Programmer", "Computer Specialist"], "bio": "Go lang ng Go!", "links": [{ "label": "Facebook", "url": "https://www.facebook.com/avebayland/" }, {"label": "Instagram", "url": "https://www.instagram.com/avebayland"}] }
   ],
   
   
