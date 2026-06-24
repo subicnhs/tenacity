@@ -1,0 +1,75 @@
+{
+  "students": [
+    { "name": "Agoyaoy, Zycie Luena", "role": "ICT Student", "skills": ["Skills"], "bio": "Wala lang.", "links": [{ "label": "Facebook", "url": "https://www.facebook.com/share/1BMBffbcjv/" }, { "label": "Instagram", "url": "https://www.instagram.com/urfav_zyyx?igsh=MTM3MTM2bzh6YjhzMQ==" }] },
+    
+    { "name": "Avelino, Leslie Cortez", "role": "ICT Student", "skills": ["Skills"], "bio": "Random na tao lang.", "links": [{ "label": "Facebook", "url": "https://www.facebook.com/share/176Sy1esZD/"}, { "label": "Instagram", "url": "https://www.instagram.com/lexlyyluv?igsh=dTIxNTJmbmZraHhm"} ] },
+    
+    { "name": "Barambangan, Alaisah Doming", "role": "ICT Student", "skills": ["Skills"], "bio": "Bio malamang.", "links": [{ "label": "Facebook", "url": "https://www.facebook.com/share/1EKh1555br/" }] },
+    
+    { "name": "Bonifacio, Jasmine Rose Laquian", "role": "ICT Student", "skills": ["President"], "bio": "MWAAHAHAHAHAH.", "links": [{ "label": "Facebook", "url": "https://www.facebook.com/share/1ENk6Ky73Y/" }] },
+    
+    { "name": "Dimarucut, Kate Nathalie Coronel", "role": " ICT Student", "skills": ["Muse"], "bio": "Bleehhh.", "links": [{ "label": "Facebook", "url": "https://www.facebook.com/share/1CN8pRUfDa/" }, {"label": "Instagram", "url": "https://www.instagram.com/ntlnathie?igsh=djJ1czJ6bGEwZmJh" }] },
+    
+    { "name": "Labitag, Hazel Joy Avelino", "role": "ICT Student", "skills": ["Skills"], "bio": "Tara gala!", "links": [{ "label": "Facebook", "url": "https://www.facebook.com/share/1XzcGVQ7g5/" }, {"label": "Instagram", "url": "https://www.instagram.com/hxzyl.e?igsh=MWx5eDJtZ3B4N3Nnbw=="}] },
+    
+    { "name": "Langaman, Justine Raine Emperador", "role": "ICT Student", "skills": ["Skills"], "bio": ".", "links": [{ "label": "Facebook", "url": "https://www.facebook.com/share/1BPV9HTG1v/" }] },
+    
+    { "name": "Nabokiag, Gabrielle Keith Annogui", "role": "ICT Student", "skills": ["Artist", "Computer Specialist"], "bio": "Random.", "links": [{ "label": "Facebook", "url": "https://www.facebook.com/share/1BNh1LRK83/" }, {"label": "Instagram", "url": "https://www.instagram.com/spottedmilkshake?igsh=YWg5N3ExeW82Z2dp"}] },
+    
+    { "name": "Ramos, Alexandra", "role": "ICT Student", "skills": ["Protocol Officer"], "bio": "Manahimik nga kayo!", "links": [{ "label": "Facebook", "url": "https://www.facebook.com/share/18nASMJtwP/" }, {"label": "Instagram", "url": "https://www.instagram.com/its_lxey7?igsh=OWh4N2x4c2h1Ync2"}] },
+    
+    { "name": "Salcedo, Devine Abayon", "role": "ICT Student", "skills": ["Skills"], "bio": ":)", "links": [{ "label": "Facebook", "url": "https://www.facebook.com/share/1EEwPfpK5G/" }] },
+    
+    { "name": "Vidal, Jenny Romanban", "role": "ICT Student", "skills": ["Skills"], "bio": "Self Initiate.", "links": [{ "label": "Facebook", "url": "https://www.facebook.com/share/1DmiZv48qQ/" }, {"label": "Instagram", "url": "https://www.instagram.com/dreiiah0lic?igsh=NmZnOXQ5MHh0OXN2"}] },
+    
+    { "name": "Aceron, Klyde Dylan Pereyra", "role": "ICT Student", "skills": ["Stand-up Comedian"], "bio": "Lakad magdamag", "links": [{ "label": "Facebook", "url": "https://www.facebook.com/share/18yJUwgpSq/" }] },
+    
+    { "name": "Alteza, Emanuel John Garcia", "role": "ICT Student", "skills": ["Skills"], "bio": "Random.", "links": [{ "label": "Facebook", "url": "https://www.facebook.com/share/1BNh1LRK83/" }, {"label": "Instagram", "url": "https://www.instagram.com/spottedmilkshake?igsh=YWg5N3ExeW82Z2dp"}] },
+    
+    { "name": "Bayland, Abraham", "role": "ICT Student", "skills": ["Data Analyst", "System Specialist", "Student-leader", "Programmer", "Computer Specialist"], "bio": "Go lang ng Go!", "links": [{ "label": "Facebook", "url": "https://www.facebook.com/avebayland/" }, {"label": "Instagram", "url": "https://www.instagram.com/avebayland"}] },
+    
+    { "name": "Nabokiag, Gabrielle Keith Annogui", "role": "ICT Student", "skills": ["Artist", "Computer Specialist"], "bio": "Random.", "links": [{ "label": "Facebook", "url": "https://www.facebook.com/share/1BNh1LRK83/" }, {"label": "Instagram", "url": "https://www.instagram.com/spottedmilkshake?igsh=YWg5N3ExeW82Z2dp"}] },
+    
+    { "name": "Nabokiag, Gabrielle Keith Annogui", "role": "ICT Student", "skills": ["Artist", "Computer Specialist"], "bio": "Random.", "links": [{ "label": "Facebook", "url": "https://www.facebook.com/share/1BNh1LRK83/" }, {"label": "Instagram", "url": "https://www.instagram.com/spottedmilkshake?igsh=YWg5N3ExeW82Z2dp"}] },
+    
+    { "name": "Nabokiag, Gabrielle Keith Annogui", "role": "ICT Student", "skills": ["Artist", "Computer Specialist"], "bio": "Random.", "links": [{ "label": "Facebook", "url": "https://www.facebook.com/share/1BNh1LRK83/" }, {"label": "Instagram", "url": "https://www.instagram.com/spottedmilkshake?igsh=YWg5N3ExeW82Z2dp"}] },
+    
+    { "name": "Nabokiag, Gabrielle Keith Annogui", "role": "ICT Student", "skills": ["Artist", "Computer Specialist"], "bio": "Random.", "links": [{ "label": "Facebook", "url": "https://www.facebook.com/share/1BNh1LRK83/" }, {"label": "Instagram", "url": "https://www.instagram.com/spottedmilkshake?igsh=YWg5N3ExeW82Z2dp"}] }
+  ],
+  
+  
+  
+  
+  
+  "officers": [
+    { "name": "Jasmine Rose L. Bonifacio", "role": "Class President", "skills": ["Leadership", "Project Coordination"], "bio": "Keeps five disciplines moving toward one deadline.", "contactGroup": "president", "links": [{ "label": "Facebook", "url": "https://www.facebook.com/share/1ENk6Ky73Y/" }] },
+    
+    { "name": "Neil John N. Generao", "role": "Vice President", "skills": ["Operations"], "bio": "Backs up the president and runs logistics for class events.", "contactGroup": "vp", "links": [{ "label": "Facebook", "url": "https://www.facebook.com/share/1b9NnzPB9s/" }] },
+    
+    { "name": "Daniel Villanueva", "role": "Secretary", "skills": ["Documentation"], "bio": "Minutes, records, and the one who remembers every deadline.", "contactGroup": "secretary", "links": [] },
+    
+    { "name": "Camille Bautista", "role": "Treasurer", "skills": ["Finance"], "bio": "Manages class funds for materials, printing, and events.", "contactGroup": "treasurer", "links": [] },
+    
+    { "name": "Joshua Lim", "role": "Auditor", "skills": ["Quality Control"], "bio": "Checks the numbers the treasurer reports, twice.", "contactGroup": "auditor", "links": [] },
+    
+    { "name": "Nicole Pascual", "role": "P.I.O.", "skills": ["Communications", "Social Media"], "bio": "Runs class announcements and this site's content updates.", "contactGroup": "pio", "links": [] }
+  ],
+  
+  
+
+  
+  
+  "teachers": [
+    { "name": "Mr. John Doe", "role": "ICT Teacher", "skills": ["Web Development", "Programming", "Graphic Design"], "bio": "Advises the class on every technical project from concept to deployment.", "links": [] },
+    { "name": "Ms. Liza Mendoza", "role": "ICT Teacher", "skills": ["Multimedia", "Animation"], "bio": "Oversees the animation and multimedia track for Tenacity.", "links": [] }
+  ],
+  
+  
+
+  
+  
+  "projects": [
+    { "title": "Class Attendance Tracker", "category": "Programming", "description": "A lightweight web app the class actually uses to log daily attendance and export weekly summaries.", "meta": "JavaScript · LocalStorage · Chart.js", "link": "#" },
+    { "title": "Subic NHS Events Calendar", "category": "Web Development", "description": "A responsive calendar site for school-wide events, built and maintained by the web team.", "meta": "HTML · CSS · JS", "link": "#" }
+    ]
+}

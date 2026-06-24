@@ -1,0 +1,31 @@
+/* ============================================================
+   ANIMATIONS
+   ============================================================ */
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+
+/* compiling text reveal for hero title */
+.compile-line {
+  display: inline-block;
+  overflow: hidden;
+}
+.compile-line::after {
+  content: '';
+}
+
+/* generic reveal-on-scroll target, animated via GSAP ScrollTrigger in scroll.js */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.portfolio-card, .profile-card {
+  will-change: transform;
+}

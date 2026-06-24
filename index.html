@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grade 12 Tenacity — Subic NHS</title>
+<meta name="description" content="The digital classroom hub of Grade 12 Tenacity, Subic National High School. Built by the class.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+<link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+
+<!-- ============ LOADER ============ -->
+<div id="loader" aria-hidden="true">
+  <div class="loader-inner">
+    <span class="loader-line">&gt; booting grade12_tenacity<span class="cursor">_</span></span>
+    <div class="loader-bar"><div class="loader-fill"></div></div>
+  </div>
+</div>
+
+<!-- ============ CANVAS (THREE.JS) ============ -->
+<canvas id="bg-canvas" aria-hidden="true"></canvas>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <a class="nav-brand" href="#home">
+    <img src="photos/snhs.png" alt="Subic NHS Logo" id="schoolLogo" class="nav-logo">
+    <span class="nav-brand-text">G12 / TENACITY</span>
+  </a>
+
+  <nav class="nav-links" id="navLinks">
+    <a href="#home" data-i="00">Home</a>
+    <a href="#showcase" data-i="01">Projects</a>
+    <a href="#class" data-i="02">Students</a>
+    <a href="#officers" data-i="03">Officers</a>
+    <a href="#teachers" data-i="04">Teachers</a>
+    <a href="#contact" data-i="05">Contact</a>
+  </nav>
+
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<main>
+
+  <!-- ============ HERO ============ -->
+  <section id="home" class="section hero">
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow mono">SUBIC NATIONAL HIGH SCHOOL · S.Y. 2026–2027</p>
+        <h1 class="hero-title">
+          <span class="line compile-line" data-text="GRADE 12">GRADE 12</span>
+          <span class="line compile-line gold" data-text="TENACITY">TENACITY</span>
+        </h1>
+        <p class="hero-sub">A class that builds things. This site is one of them — designed, coded, and shipped by the students whose work you're about to scroll through.</p>
+        <div class="hero-cta-row">
+          <a href="#showcase" class="btn btn-primary">View the work</a>
+          <a href="#class" class="btn btn-ghost">Meet the class</a>
+        </div>
+      </div>
+      <div class="hero-stage" aria-hidden="true">
+        <div class="hero-stage-tag mono">drag to look around</div>
+      </div>
+    </div>
+    <div class="scroll-cue mono" aria-hidden="true">
+      <span>scroll</span>
+      <span class="scroll-cue-line"></span>
+    </div>
+  </section>
+
+  <!-- ============ SECTION 1: CLASSROOM INTRO ============ -->
+  <section id="intro" class="section reveal-section">
+    <div class="section-head">
+      <p class="eyebrow mono">// 01 — the room</p>
+      <h2>One classroom. Five disciplines.</h2>
+    </div>
+    <div class="intro-grid">
+      <p class="intro-lead">Tenacity isn't a name we picked for the plaque. It's the room where a design proof gets reworked at lunch, where a script breaks twice before class ends, and where somebody always stays to fix it. What follows is the proof — organized by craft, not by ego.</p>
+      <ul class="intro-stats">
+        <li><span class="stat-num mono">42</span><span class="stat-label">students</span></li>
+        <li><span class="stat-num mono">5</span><span class="stat-label">disciplines</span></li>
+        <li><span class="stat-num mono">1</span><span class="stat-label">shared deadline</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ SECTION 2-4: SHOWCASE ============ -->
+  <section id="showcase" class="section showcase">
+
+    <article class="showcase-row" data-discipline="programming">
+      <div class="showcase-text">
+        <p class="eyebrow mono">// 02 — programming</p>
+        <h3>Code that ships</h3>
+        <p>Web apps, automations, and the occasional overengineered to-do list. Built, broken, and rebuilt in the same afternoon.</p>
+      </div>
+      <div class="showcase-visual" id="visual-code">
+        <div class="code-window mono">
+          <div class="code-window-bar"><span></span><span></span><span></span></div>
+          <pre class="code-type" data-code="const tenacity = () =&gt;\n  effort\n    .repeat(Infinity)\n    .until('done');"></pre>
+        </div>
+      </div>
+    </article>
+
+    <article class="showcase-row reverse" data-discipline="design">
+      <div class="showcase-text">
+        <p class="eyebrow mono">// 03 — graphic design</p>
+        <h3>Visuals with intent</h3>
+        <p>Posters, brand boards, and layouts made to be looked at twice — every choice of color and type defended in a critique.</p>
+      </div>
+      <div class="showcase-visual" id="visual-design">
+        <div class="design-board"></div>
+      </div>
+    </article>
+
+    <article class="showcase-row" data-discipline="animation">
+      <div class="showcase-text">
+        <p class="eyebrow mono">// 04 — animation</p>
+        <h3>Motion with a point</h3>
+        <p>Motion graphics and short-form animation built frame by frame, where timing carries as much meaning as the drawing.</p>
+      </div>
+      <div class="showcase-visual" id="visual-anim">
+        <div class="anim-stage"></div>
+      </div>
+    </article>
+
+    <div class="portfolio-grid" id="portfolioGrid">
+      <!-- injected by js/profiles.js from data/profiles.json -->
+    </div>
+  </section>
+
+  <!-- ============ SECTION 5: MEET THE CLASS ============ -->
+  <section id="class" class="section">
+    <div class="section-head">
+      <p class="eyebrow mono">// 05 — the class</p>
+      <h2>Meet Tenacity</h2>
+      <p class="section-sub">Forty-two students, one leader. Tap a card.</p>
+    </div>
+    <div class="student-grid" id="studentGrid">
+      <!-- injected by js/profiles.js -->
+    </div>
+  </section>
+
+  <!-- ============ OFFICERS ============ -->
+  <section id="officers" class="section alt-bg">
+    <div class="section-head">
+      <p class="eyebrow mono">// 06 — officers</p>
+      <h2>Who runs the room</h2>
+    </div>
+    <div class="officer-grid" id="officerGrid">
+      <!-- injected by js/profiles.js -->
+    </div>
+  </section>
+
+  <!-- ============ TEACHERS ============ -->
+  <section id="teachers" class="section">
+    <div class="section-head">
+      <p class="eyebrow mono">// 07 — teachers</p>
+      <h2>Who taught the room</h2>
+    </div>
+    <div class="teacher-grid" id="teacherGrid">
+      <!-- injected by js/profiles.js -->
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section id="contact" class="section contact-section">
+    <div class="section-head">
+      <p class="eyebrow mono">// 08 — contact</p>
+      <h2>Reach the room</h2>
+      <p class="section-sub">Pick who you're trying to reach. We'll route it from there.</p>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-tabs" role="tablist" aria-label="Contact recipient group">
+        <button class="contact-tab active" data-target="teachers" role="tab" aria-selected="true">Teachers</button>
+        <button class="contact-tab" data-target="officers" role="tab" aria-selected="false">Officers</button>
+        <button class="contact-tab" data-target="developers" role="tab" aria-selected="false">Developers</button>
+      </div>
+
+      <form class="contact-form" id="contactForm" novalidate>
+        <div class="form-row">
+          <label for="cf-name">Name</label>
+          <input type="text" id="cf-name" name="name" required autocomplete="name">
+        </div>
+        <div class="form-row">
+          <label for="cf-email">Email</label>
+          <input type="email" id="cf-email" name="email" required autocomplete="email">
+        </div>
+
+        <div class="form-row contact-recipient" data-group="teachers">
+          <label for="cf-recipient-teachers">Subject</label>
+          <input type="text" id="cf-recipient-teachers" name="subject" placeholder="What's this about?">
+        </div>
+
+        <div class="form-row contact-recipient is-hidden" data-group="officers">
+          <label for="cf-recipient-officers">Officer</label>
+          <select id="cf-recipient-officers" name="officer">
+            <option value="president">Class President</option>
+            <option value="vp">Vice President</option>
+            <option value="secretary">Secretary</option>
+            <option value="treasurer">Treasurer</option>
+            <option value="auditor">Auditor</option>
+            <option value="pio">P.I.O.</option>
+          </select>
+        </div>
+
+        <div class="form-row contact-recipient is-hidden" data-group="developers">
+          <label for="cf-recipient-developers">Team</label>
+          <select id="cf-recipient-developers" name="team">
+            <option value="web">Web Team</option>
+            <option value="design">Design Team</option>
+            <option value="animation">Animation Team</option>
+          </select>
+        </div>
+
+        <div class="form-row">
+          <label for="cf-message">Message</label>
+          <textarea id="cf-message" name="message" rows="5" required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Send message</button>
+        <p class="form-status mono" id="formStatus" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <p class="mono">grade12_tenacity © 2026 — Subic National High School</p>
+    <p class="mono footer-sig">designed &amp; built by <a href="https://www.facebook.com/avebayland" >Abraham Bayland</a></p>
+  </footer>
+
+</main>
+
+<!-- ============ PROJECT MODAL ============ -->
+<div class="modal" id="projectModal" aria-hidden="true">
+  <div class="modal-backdrop" data-close></div>
+  <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <button class="modal-close" data-close aria-label="Close">×</button>
+    <p class="eyebrow mono" id="modalCategory"></p>
+    <h3 id="modalTitle"></h3>
+    <p id="modalDesc"></p>
+    <p class="modal-meta mono" id="modalMeta"></p>
+    <a href="#" id="modalLink" class="btn btn-ghost" target="_blank" rel="noopener">View project →</a>
+  </div>
+</div>
+
+<!-- ============ PROFILE MODAL ============ -->
+<div class="modal" id="profileModal" aria-hidden="true">
+  <div class="modal-backdrop" data-close></div>
+  <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="profileModalName">
+    <button class="modal-close" data-close aria-label="Close">×</button>
+    <img id="profileModalImg" class="modal-avatar" src="" alt="">
+    <p class="eyebrow mono" id="profileModalRole"></p>
+    <h3 id="profileModalName"></h3>
+    <p id="profileModalBio"></p>
+    <ul class="modal-skills" id="profileModalSkills"></ul>
+    <div class="modal-links" id="profileModalLinks"></div>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+<script src="js/three-scene.js"></script>
+<script src="js/scroll.js"></script>
+<script src="js/profiles.js"></script>
+<script src="js/contact.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
