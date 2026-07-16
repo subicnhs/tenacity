@@ -1,7 +1,7 @@
 {
   "students": [
     { "name": "Agoyaoy, Zycie Luena", 
-      
+      "photo": "photos/snhs.png",
       "role": "ICT Student", 
       "skills": ["Skills"], 
       "bio": "Wala lang.", 
