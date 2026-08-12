@@ -30,8 +30,8 @@
 <!-- ============ NAV ============ -->
 <header class="nav" id="nav">
   <a class="nav-brand" href="#home">
-    <img src="photos/snhs.png" alt="Subic NHS Logo" id="schoolLogo" class="nav-logo">
-    <span class="nav-brand-text">G12 / TENACITY</span>
+    <img src="photos/12T.png" alt="Subic NHS Logo" id="schoolLogo" class="nav-logo">
+    <span class="nav-brand-text"><span style="color:white;"> G12</span> <span style="color:#2BB7A3;">/</span> TENACITY</span>
   </a>
 
   <nav class="nav-links" id="navLinks">
@@ -79,14 +79,13 @@
   <section id="intro" class="section reveal-section">
     <div class="section-head">
       <p class="eyebrow mono">// 01 — the room</p>
-      <h2>One classroom. Five disciplines.</h2>
+      <h2>One classroom. Ten Leaders.</h2>
     </div>
     <div class="intro-grid">
       <p class="intro-lead">Tenacity isn't a name we picked for the plaque. It's the room where a design proof gets reworked at lunch, where a script breaks twice before class ends, and where somebody always stays to fix it. What follows is the proof — organized by craft, not by ego.</p>
       <ul class="intro-stats">
-        <li><span class="stat-num mono">42</span><span class="stat-label">students</span></li>
-        <li><span class="stat-num mono">5</span><span class="stat-label">disciplines</span></li>
-        <li><span class="stat-num mono">1</span><span class="stat-label">shared deadline</span></li>
+        <li><span class="stat-num mono">44</span><span class="stat-label">students</span></li>
+        <li><span class="stat-num mono">10</span><span class="stat-label">leaders</span></li>
       </ul>
     </div>
   </section>
@@ -140,7 +139,7 @@
     <div class="section-head">
       <p class="eyebrow mono">// 05 — the class</p>
       <h2>Meet Tenacity</h2>
-      <p class="section-sub">Forty-two students, one leader. Tap a card.</p>
+      <p class="section-sub">Forty-two students, twelve leaders. Tap a card.</p>
     </div>
     <div class="student-grid" id="studentGrid">
       <!-- injected by js/profiles.js -->
@@ -169,7 +168,197 @@
     </div>
   </section>
 
-  <!-- ============ CONTACT ============ -->
+<!-- ============ CONTACT ============ -->
+<section id="contact" class="section contact-section">
+  <div class="section-head">
+    <p class="eyebrow mono">// 08 — contact</p>
+    <h2>Reach the room</h2>
+    <p class="section-sub">Pick who you're trying to reach. We'll route it from there.</p>
+  </div>
+
+  <div class="contact-grid">
+
+    <!-- Tabs -->
+    <div class="contact-tabs" role="tablist" aria-label="Contact recipient group">
+      <button type="button" class="contact-tab active" data-target="teachers" role="tab" aria-selected="true">Teachers</button>
+      <button type="button" class="contact-tab" data-target="officers" role="tab" aria-selected="false">Officers</button>
+      <button type="button" class="contact-tab" data-target="developers" role="tab" aria-selected="false">Developers</button>
+    </div>
+
+    <!-- =========================
+         TEACHERS FORM
+    ========================== -->
+    <form
+      class="contact-form contact-panel"
+      id="teachersForm"
+      data-form="teachers"
+      action="https://formsubmit.co/5399e6b287d38aed0d6cf2f17d7aff0d"
+      method="POST">
+
+      <input type="hidden" name="_captcha" value="false">
+
+      <div class="form-row">
+        <label for="teacher-name">Name</label>
+        <input type="text" id="teacher-name" name="Name" required autocomplete="name">
+      </div>
+
+      <div class="form-row">
+        <label for="teacher-email">Email</label>
+        <input type="email" id="teacher-email" name="Email" required autocomplete="email">
+      </div>
+
+      <div class="form-row">
+        <label for="teacher-subject">Subject</label>
+        <input type="text" id="teacher-subject" name="Subject" placeholder="What's this about?">
+      </div>
+
+      <div class="form-row">
+        <label for="teacher-message">Message</label>
+        <textarea id="teacher-message" name="Message" rows="5" required></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Send Message</button>
+      <p class="form-status mono" role="status" aria-live="polite"></p>
+    </form>
+
+    <!-- =========================
+         OFFICERS FORM
+    ========================== -->
+    <form
+      class="contact-form contact-panel is-hidden"
+      id="officersForm"
+      data-form="officers"
+      action="https://formsubmit.co/5399e6b287d38aed0d6cf2f17d7aff0d"
+      method="POST">
+
+      <input type="hidden" name="_captcha" value="false">
+    
+
+      <div class="form-row">
+        <label for="officer-name">Name</label>
+        <input type="text" id="officer-name" name="Name" required>
+      </div>
+
+      <div class="form-row">
+        <label for="officer-email">Email</label>
+        <input type="email" id="officer-email" name="Email" required>
+      </div>
+
+      <div class="form-row">
+        <label for="officer-select">Officer</label>
+        <select id="officer-select" name="Officer">
+          <option value="President">Class President</option>
+          <option value="Vice President">Vice President</option>
+          <option value="Secretary">Secretary</option>
+          <option value="Treasurer">Treasurer</option>
+          <option value="Auditor">Auditor</option>
+          <option value="P.I.O">P.I.O.</option>
+          <option value="P.O 1">P.O I</option>
+          <option value="P.O 2">P.O II</option>
+          <option value="Muse">Muse</option>
+          <option value="Escort">Escort</option>
+        </select>
+      </div>
+
+      <div class="form-row">
+        <label for="officer-message">Message</label>
+        <textarea id="officer-message" name="Message" rows="5" required></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Send Message</button>
+      <p class="form-status mono" role="status" aria-live="polite"></p>
+    </form>
+
+    <!-- =========================
+         DEVELOPERS FORM
+    ========================== -->
+    <form
+      class="contact-form contact-panel is-hidden"
+      id="developersForm"
+      data-form="developers"
+      action="https://formsubmit.co/5399e6b287d38aed0d6cf2f17d7aff0d"
+      method="POST">
+
+      <input type="hidden" name="_captcha" value="false">
+      
+      
+      <div class="form-row">
+        <label for="developer-name">Name</label>
+        <input type="text" id="developer-name" name="Name" required>
+      </div>
+
+      <div class="form-row">
+        <label for="developer-email">Email</label>
+        <input type="email" id="developer-email" name="Email" required>
+      </div>
+
+      <div class="form-row">
+        <label for="developer-team">Team</label>
+        <select id="developer-team" name="Team">
+          <option value="Web">Web Team</option>
+          <option value="Design">Design Team</option>
+          <option value="Animation">Animation Team</option>
+        </select>
+      </div>
+
+      <div class="form-row">
+        <label for="developer-message">Message</label>
+        <textarea id="developer-message" name="Message" rows="5" required></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Send Message</button>
+      <p class="form-status mono" role="status" aria-live="polite"></p>
+    </form>
+
+  </div>
+</section>
+
+  <footer class="site-footer">
+    <p class="mono">grade12_tenacity © 2026 — Subic National High School</p>
+    <p class="mono footer-sig">designed &amp; built by <a href="https://www.facebook.com/avebayland" >Abraham Bayland</a></p>
+  </footer>
+
+</main>
+
+<!-- ============ PROJECT MODAL ============ -->
+<div class="modal" id="projectModal" aria-hidden="true">
+  <div class="modal-backdrop" data-close></div>
+  <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <button class="modal-close" data-close aria-label="Close">×</button>
+    <p class="eyebrow mono" id="modalCategory"></p>
+    <h3 id="modalTitle"></h3>
+    <p id="modalDesc"></p>
+    <p class="modal-meta mono" id="modalMeta"></p>
+    <a href="#" id="modalLink" class="btn btn-ghost" target="_blank" rel="noopener">View project →</a>
+  </div>
+</div>
+
+<!-- ============ PROFILE MODAL ============ -->
+<div class="modal" id="profileModal" aria-hidden="true">
+  <div class="modal-backdrop" data-close></div>
+  <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="profileModalName">
+    <button class="modal-close" data-close aria-label="Close">×</button>
+    <img id="profileModalImg" class="modal-avatar" src="photos/snhs.png" alt="">
+    <p class="eyebrow mono" id="profileModalRole"></p>
+    <h3 id="profileModalName"></h3>
+    <p id="profileModalBio"></p>
+    <ul class="modal-skills" id="profileModalSkills"></ul>
+    <div class="modal-links" id="profileModalLinks"></div>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+<script src="js/three-scene.js"></script>
+<script src="js/scroll.js"></script>
+<script src="js/profiles.js"></script>
+<script src="js/contact.js"></script>
+<script src="js/main.js"></script>
+
+
+<!--  
   <section id="contact" class="section contact-section">
     <div class="section-head">
       <p class="eyebrow mono">// 08 — contact</p>
@@ -184,7 +373,14 @@
         <button class="contact-tab" data-target="developers" role="tab" aria-selected="false">Developers</button>
       </div>
 
-      <form class="contact-form" id="contactForm" novalidate>
+      <form class="contact-form" id="contactForm" action="https://formsubmit.co/8ea112790aa24a275bf1e7e73f896fff" method="POST">
+        
+        
+        <input type="hidden" name="_captcha" value="false">
+        
+      
+        <input type="hidden" name="_autoresponse" value="We have received your response. We will be in touch very soon :>">
+        
         <div class="form-row">
           <label for="cf-name">Name</label>
           <input type="text" id="cf-name" name="name" required autocomplete="name">
@@ -229,50 +425,6 @@
         <p class="form-status mono" id="formStatus" role="status" aria-live="polite"></p>
       </form>
     </div>
-  </section>
-
-  <footer class="site-footer">
-    <p class="mono">grade12_tenacity © 2026 — Subic National High School</p>
-    <p class="mono footer-sig">designed &amp; built by <a href="https://www.facebook.com/avebayland" >Abraham Bayland</a></p>
-  </footer>
-
-</main>
-
-<!-- ============ PROJECT MODAL ============ -->
-<div class="modal" id="projectModal" aria-hidden="true">
-  <div class="modal-backdrop" data-close></div>
-  <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
-    <button class="modal-close" data-close aria-label="Close">×</button>
-    <p class="eyebrow mono" id="modalCategory"></p>
-    <h3 id="modalTitle"></h3>
-    <p id="modalDesc"></p>
-    <p class="modal-meta mono" id="modalMeta"></p>
-    <a href="#" id="modalLink" class="btn btn-ghost" target="_blank" rel="noopener">View project →</a>
-  </div>
-</div>
-
-<!-- ============ PROFILE MODAL ============ -->
-<div class="modal" id="profileModal" aria-hidden="true">
-  <div class="modal-backdrop" data-close></div>
-  <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="profileModalName">
-    <button class="modal-close" data-close aria-label="Close">×</button>
-    <img id="profileModalImg" class="modal-avatar" src="" alt="">
-    <p class="eyebrow mono" id="profileModalRole"></p>
-    <h3 id="profileModalName"></h3>
-    <p id="profileModalBio"></p>
-    <ul class="modal-skills" id="profileModalSkills"></ul>
-    <div class="modal-links" id="profileModalLinks"></div>
-  </div>
-</div>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-
-<script src="js/three-scene.js"></script>
-<script src="js/scroll.js"></script>
-<script src="js/profiles.js"></script>
-<script src="js/contact.js"></script>
-<script src="js/main.js"></script>
+  </section>-->
 </body>
 </html>

@@ -8,7 +8,7 @@
   'use strict';
 
   const initials = (name) =>
-    name.split(' ').filter(Boolean).slice(0, 2).map(👎 => n[0]).join('').toUpperCase();
+    name.split(' ').filter(Boolean).slice(0, 2).map((n) => n[0]).join('').toUpperCase();
 
   // ---- modal helpers ----
   const profileModal = document.getElementById('profileModal');
@@ -79,6 +79,7 @@
     link.href = project.link || '#';
     openModal(projectModal);
   }
+  
 
   // ---- card builders ----
   function buildProfileCard(person, variant) {
@@ -97,7 +98,7 @@
       <div class="profile-avatar">
         ${
           person.photo
-            ? <img src="${person.photo}" alt="${person.name}">
+            ? `<img src="${person.photo}" alt="${person.name}">`
             : initials(person.name)
         }
       </div>
@@ -108,7 +109,7 @@
 
         <div class="teacher-specialties">
           ${(person.skills || [])
-            .map(skill => <span class="tag">${skill}</span>)
+            .map(skill => `<span class="tag">${skill}</span>`)
             .join('')}
         </div>
       </div>
@@ -122,7 +123,7 @@
       <div class="profile-avatar">
         ${
           person.photo
-            ? <img src="${person.photo}" alt="${person.name}">
+            ? `<img src="${person.photo}" alt="${person.name}">`
             : initials(person.name)
         }
       </div>
@@ -138,7 +139,7 @@
       <div class="profile-avatar">
         ${
           person.photo
-            ? <img src="${person.photo}" alt="${person.name}">
+            ? `<img src="${person.photo}" alt="${person.name}">`
             : initials(person.name)
         }
       </div>
@@ -210,19 +211,19 @@ function buildProfileCard(person, variant) {
 
     if (variant === 'teacher') {
       card.innerHTML = `
-        <div class="profile-avatar">${person.photo ? <img src="${person.photo}" alt="${person.name}"> : initials(person.name)}</div>
+        <div class="profile-avatar">${person.photo ? `<img src="${person.photo}" alt="${person.name}">` : initials(person.name)}</div>
         <div class="teacher-card-body">
           <h4>${person.name}</h4>
           <p class="profile-role mono">${person.role}</p>
           <div class="teacher-specialties">
-            ${(person.skills || []).map((s) => <span class="tag">${s}</span>).join('')}
+            ${(person.skills || []).map((s) => `<span class="tag">${s}</span>`).join('')}
           </div>
         </div>
       `;
     } else if (variant === 'officer') {
       card.innerHTML = `
         <span class="officer-badge mono">${person.role}</span>
-        <div class="profile-avatar">${person.photo ? <img src="${person.photo}" alt="${person.name}"> : initials(person.name)}</div>
+        <div class="profile-avatar">${person.photo ? `<img src="${person.photo}" alt="${person.name}">` : initials(person.name)}</div>
         <p class="profile-name">${person.name}</p>
         <span class="officer-contact-btn mono">Contact →</span>
       `;
@@ -238,7 +239,7 @@ function buildProfileCard(person, variant) {
       });
     } else {
       card.innerHTML = `
-        <div class="profile-avatar">${person.photo ? <img src="${person.photo}" alt="${person.name}"> : initials(person.name)}</div>
+        <div class="profile-avatar">${person.photo ? `<img src="${person.photo}" alt="${person.name}">` : initials(person.name)}</div>
         <p class="profile-name">${person.name}</p>
         <p class="profile-role mono">${person.role}</p>
       `;
@@ -265,7 +266,7 @@ function buildProfileCard(person, variant) {
   'use strict';
 
   const initials = (name) =>
-    name.split(' ').filter(Boolean).slice(0, 2).map(👎 => n[0]).join('').toUpperCase();
+    name.split(' ').filter(Boolean).slice(0, 2).map((n) => n[0]).join('').toUpperCase();
 
   // ---- modal helpers ----
   const profileModal = document.getElementById('profileModal');
@@ -349,7 +350,7 @@ function buildProfileCard(person, variant) {
           <h4>${person.name}</h4>
           <p class="profile-role mono">${person.role}</p>
           <div class="teacher-specialties">
-            ${(person.skills || []).map((s) => <span class="tag">${s}</span>).join('')}
+            ${(person.skills || []).map((s) => `<span class="tag">${s}</span>`).join('')}
           </div>
         </div>
       `;
@@ -357,7 +358,7 @@ function buildProfileCard(person, variant) {
     else if (variant === 'officer') {
       card.innerHTML = `
         <span class="officer-badge mono">${person.role}</span>
-        <div class="profile-avatar">${person.photo ? <img src="${person.photo}" alt="${person.name}"> : initials(person.name)}</div>
+        <div class="profile-avatar">${person.photo ? `<img src="${person.photo}" alt="${person.name}">` : initials(person.name)}</div>
         <p class="profile-name">${person.name}</p>
         <span class="officer-contact-btn mono">Contact →</span>
       `;
@@ -373,7 +374,7 @@ function buildProfileCard(person, variant) {
       });
     } else {
       card.innerHTML = `
-        <div class="profile-avatar">${person.photo ? <img src="${person.photo}" alt="${person.name}"> : initials(person.name)}</div>
+        <div class="profile-avatar">${person.photo ? `<img src="${person.photo}" alt="${person.name}">` : initials(person.name)}</div>
         <p class="profile-name">${person.name}</p>
         <p class="profile-role mono">${person.role}</p>
       `;

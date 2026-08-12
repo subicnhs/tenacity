@@ -3,7 +3,7 @@
    Tab switching between Teachers / Officers / Developers,
    and a front-end-only submit confirmation (no backend in MVP).
    ============================================================ */
-
+/*
 (function () {
   'use strict';
 
@@ -29,8 +29,8 @@
   });
 
   if (form) {
-    form.addEventListener('submit', (e) => {
-      e.preventDefault();
+    form.addEventListener('submit', () => {
+     // e.preventDefault();
 
       const name = form.name.value.trim();
       const email = form.email.value.trim();
@@ -57,4 +57,82 @@
       });
     });
   }
+})();
+
+*/
+
+
+
+
+/* ============================================================
+   CONTACT.JS
+   Separate Forms per Tab
+============================================================ */
+
+(function () {
+    "use strict";
+
+    const tabs = document.querySelectorAll(".contact-tab");
+    const forms = document.querySelectorAll(".contact-panel");
+
+    function activateTab(target) {
+
+        tabs.forEach(tab => {
+            const active = tab.dataset.target === target;
+
+            tab.classList.toggle("active", active);
+            tab.setAttribute("aria-selected", active);
+        });
+
+        forms.forEach(form => {
+            form.classList.toggle(
+                "is-hidden",
+                form.dataset.form !== target
+            );
+        });
+    }
+
+    tabs.forEach(tab => {
+
+        tab.addEventListener("click", () => {
+            activateTab(tab.dataset.target);
+        });
+
+    });
+
+    forms.forEach(form => {
+
+        form.addEventListener("submit", function (e) {
+
+            // e.preventDefault();
+
+            const status = form.querySelector(".form-status");
+
+            const name = form.name.value.trim();
+            const email = form.email.value.trim();
+            const message = form.message.value.trim();
+
+            if (!name || !email || !message) {
+
+                e.preventDefault();
+
+                status.style.color = "var(--coral)";
+                status.textContent =
+                    "Please fill in your name, email, and message.";
+
+                return;
+            }
+
+            const recipient =
+                form.dataset.form.charAt(0).toUpperCase() +
+                form.dataset.form.slice(1);
+
+            status.style.color = "var(--teal)";
+            status.textContent =
+                `Message ready to send to ${recipient}.`;
+
+        });
+
+    });
+
 })();

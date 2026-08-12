@@ -74,7 +74,7 @@ h3 { font-size: clamp(1.35rem, 2.6vw, 1.85rem); }
 
 p { color: rgba(242, 239, 230, 0.78); }
 
-a { color: inherit; text-decoration: none; }
+a { color: inherit; text-decoration: none;}
 
 img { max-width: 100%; display: block; }
 
@@ -510,7 +510,7 @@ main, header, footer { position: relative; z-index: 1; }
 }
 
 /* ============ CONTACT ============ */
-.contact-grid {
+/*.contact-grid {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1.5rem;
@@ -549,6 +549,96 @@ main, header, footer { position: relative; z-index: 1; }
 }
 .is-hidden { display: none; }
 .form-status { min-height: 1.2em; color: var(--teal); }
+*/
+
+/* ============ CONTACT ============ */
+
+.contact-grid{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:1.5rem;
+    max-width:640px;
+}
+
+.contact-tabs{
+    display:flex;
+    gap:.5rem;
+    border-bottom:1px solid var(--line);
+}
+
+.contact-tab{
+    padding:.7rem 1.1rem;
+    font-size:.88rem;
+    font-weight:500;
+    color:rgba(242,239,230,.55);
+    border-bottom:2px solid transparent;
+    transition:color .2s var(--ease),border-color .2s var(--ease);
+}
+
+.contact-tab.active{
+    color:var(--gold);
+    border-color:var(--gold);
+}
+
+.contact-panel{
+    display:flex;
+    flex-direction:column;
+    gap:1.1rem;
+}
+
+.contact-panel.is-hidden{
+    display:none;
+}
+
+.contact-form{
+    display:flex;
+    flex-direction:column;
+    gap:1.1rem;
+}
+
+.form-row{
+    display:flex;
+    flex-direction:column;
+    gap:.45rem;
+}
+
+.form-row label{
+    font-size:.82rem;
+    color:rgba(242,239,230,.65);
+}
+
+.form-row input,
+.form-row select,
+.form-row textarea{
+    background:var(--ink-2);
+    border:1px solid var(--line-strong);
+    border-radius:3px;
+    padding:.75rem .9rem;
+    color:var(--paper);
+    font-size:.95rem;
+    transition:border-color .2s var(--ease);
+}
+
+.form-row input:focus,
+.form-row select:focus,
+.form-row textarea:focus{
+    border-color:var(--gold);
+    outline:none;
+}
+
+.form-status{
+    min-height:1.2em;
+    color:var(--teal);
+}
+
+.is-hidden{
+    display:none;
+}
+
+
+
+
+
 
 /* ============ FOOTER ============ */
 .site-footer {
@@ -577,7 +667,7 @@ main, header, footer { position: relative; z-index: 1; }
 .modal-backdrop {
   position: absolute;
   inset: 0;
-  background: rgba(11,18,32,0.82);
+  background: rgba(11, 18, 32, 0.82);
   backdrop-filter: blur(4px);
 }
 .modal-panel {
