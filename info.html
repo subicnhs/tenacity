@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0B1220">
+  <meta name="description" content="Term-by-term grades and subject schedules for Grade 12 Tenacity.">
+  <title>Grades — Grade 12 Tenacity</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="css/stylesss.css">
+</head>
+<body>
+
+  <!-- Boot screen -->
+  <div class="boot" id="boot">booting grade12_tenacity_</div>
+
+  <!-- Ambient 3D background (mounted by js/scene.js) -->
+  <canvas id="bg-canvas" aria-hidden="true"></canvas>
+
+  <!-- Scroll progress indicator -->
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <!-- Top navigation -->
+  <header class="topbar">
+    <a class="brand" href="#home">G12 <b>/</b> TENACITY</a>
+
+    <nav id="primaryNav">
+      <a href="#home">Home</a>
+      <a href="#term1">Term 1</a>
+      <a href="#term2">Term 2</a>
+      <a href="#term3">Term 3</a>
+    </nav>
+
+    <div class="topbar-right">
+      <div class="clock" id="clock">00:00:00</div>
+      <button
+        class="nav-toggle"
+        id="navToggle"
+        type="button"
+        aria-label="Open menu"
+        aria-expanded="false"
+        aria-controls="primaryNav"
+      >
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="home">
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="eyebrow reveal">// GRADE 12 · ICT · S.Y. 2026–2027</div>
+      <h1 class="reveal">Grades<br><span>in depth.</span></h1>
+      <p class="reveal">
+        Term-by-term grades and subject schedules for Grade 12 Tenacity —
+        organized in the same visual language as the class dashboard. Each
+        subject links to its own grade sheet.
+      </p>
+      <a class="hero-btn reveal" href="#term1">
+        <span>Explore terms</span>
+        <svg class="hero-btn-icon" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true">
+          <path d="M4 12L12 4M12 4H6M12 4V10" stroke="currentColor" stroke-width="1.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+      <div class="hero-mark" aria-hidden="true">T12</div>
+      <div class="scroll-cue reveal" aria-hidden="true"><span></span>scroll</div>
+    </section>
+
+    <!-- Term 1 -->
+    <section class="terms" id="term1">
+      <div class="section-head">
+        <span class="reveal">// 01 — TERM 1</span>
+        <h2 class="reveal">Build the<br><em>foundation.</em></h2>
+        <p class="reveal">First-term subjects, schedule, and each subject's own grade sheet.</p>
+      </div>
+      <div class="schedule" id="schedule1"></div>
+    </section>
+
+    <!-- Term 2 -->
+    <section class="terms" id="term2">
+      <div class="section-head">
+        <span class="reveal">// 02 — TERM 2</span>
+        <h2 class="reveal">Keep the<br><em>momentum.</em></h2>
+        <p class="reveal">Second-term subjects, schedule, and each subject's own grade sheet.</p>
+      </div>
+      <div class="schedule" id="schedule2"></div>
+    </section>
+
+    <!-- Term 3 -->
+    <section class="terms" id="term3">
+      <div class="section-head">
+        <span class="reveal">// 03 — TERM 3</span>
+        <h2 class="reveal">Finish with<br><em>tenacity.</em></h2>
+        <p class="reveal">Third-term subjects, schedule, and each subject's own grade sheet.</p>
+      </div>
+      <div class="schedule" id="schedule3"></div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="footer-brand">grade12_tenacity</div>
+    <p>© 2026 — Subic National High School</p>
+    <p>designed &amp; built by <strong>Abraham Bayland</strong></p>
+  </footer>
+
+  <!-- Per-subject Google Sheets modal -->
+  <div class="sheet-modal" id="sheetModal">
+    <div class="sheet-modal-inner">
+      <div class="sheet-modal-head">
+        <span id="modalSubject">Grade sheet</span>
+        <button id="closeSheet" type="button" aria-label="Close sheet viewer">
+          <svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true">
+            <path d="M3 3L13 13M13 3L3 13" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+          </svg>
+        </button>
+      </div>
+      <iframe id="modalFrame" title="Google Sheets viewer"></iframe>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+  <script src="js/scene.js" defer></script>
+  <script src="js/sched.js" defer></script>
+</body>
+</html>

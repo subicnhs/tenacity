@@ -11,8 +11,12 @@
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/reponsive.css">
+<!--<link rel="stylesheet" href="css/style.css">-->
 </head>
 <body>
+  
+<div class="popup" id="popup"></div>
 
 <!-- Skip link for keyboard / screen-reader users -->
 <a class="skip-link" href="#directory">Skip to student directory</a>
@@ -38,7 +42,7 @@
       </span>
       <div class="brand-text">
         <span class="brand-eyebrow">ATTENDANCE</span>
-        <span class="brand-title">3D STUDENT DASHBOARD</span>
+        <span class="brand-title">STUDENT DASHBOARD</span>
       </div>
     </div>
     <div class="live-clock" id="liveClock" role="status" aria-live="polite">
@@ -50,11 +54,11 @@
 
 <main>
   <!-- ================= HERO ================= -->
-  <section class="hero" aria-labelledby="hero-heading">
-    <div class="hero-inner">
-      <p class="hero-eyebrow" id="schoolYearLabel">S.Y. 2026–2027 · CLASS ATTENDANCE</p>
-      <h1 class="hero-heading" id="hero-heading">Attendance in depth.</h1>
-      <p class="hero-description">
+  <section class="heroA" aria-labelledby="hero-heading">
+    <div class="hero-innerA">
+      <p class="hero-eyebrowA" id="schoolYearLabel">S.Y. 2026–2027 · CLASS ATTENDANCE</p>
+      <h1 class="hero-headingA" id="hero-heading">Attendance in depth.</h1>
+      <p class="hero-descriptionA">
         A responsive 3D attendance dashboard for monitoring student attendance,
         identifying perfect attendance, and viewing student profiles.
       </p>
@@ -71,18 +75,14 @@
     <div class="stats-grid">
       <article class="stat-card stat-card--total">
         <span class="stat-label">Total Students</span>
-        <span class="stat-value" id="statTotal">0</span>
-      </article>
-      <article class="stat-card stat-card--present">
-        <span class="stat-label">Present Today</span>
-        <span class="stat-value" id="statPresent">0</span>
+        <span class="stat-value" id="statotal">43</span>
       </article>
       <article class="stat-card stat-card--perfect">
         <span class="stat-label">Perfect Attendance</span>
         <span class="stat-value" id="statPerfect">0</span>
       </article>
       <article class="stat-card stat-card--attention">
-        <span class="stat-label">Needs Attention</span>
+        <span class="stat-label">Need Attention</span>
         <span class="stat-value" id="statAttention">0</span>
       </article>
     </div>
@@ -174,5 +174,6 @@
 </footer>-->
 
 <script src="js/app.js"></script>
+<script src="js/net.js"></script>
 </body>
 </html>
