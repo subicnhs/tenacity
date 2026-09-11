@@ -27,7 +27,7 @@
 <!-- ============ CANVAS (THREE.JS) ============ -->
 <canvas id="bg-canvas" aria-hidden="true"></canvas>
 
-<!-- ============ NAV ============ -->
+<!-- ============ NAV ============  -->
 <header class="nav" id="nav">
   <a class="nav-brand" href="#home">
     <img src="photos/12T.png" alt="Subic NHS Logo" id="schoolLogo" class="nav-logo">
@@ -50,7 +50,9 @@
 
 <main>
 
-  <!-- ============ HERO ============ -->
+
+
+
   <section id="home" class="section hero">
     <div class="hero-grid">
       <div class="hero-copy">
@@ -75,7 +77,9 @@
     </div>
   </section>
 
-  <!-- ============ SECTION 1: CLASSROOM INTRO ============ -->
+
+
+
   <section id="intro" class="section reveal-section">
     <div class="section-head">
       <p class="eyebrow mono">// 01 — the room</p>
@@ -84,17 +88,15 @@
     <div class="intro-grid">
       <p class="intro-lead">Tenacity isn't a name we picked for the plaque. It's the room where a design proof gets reworked at lunch, where a script breaks twice before class ends, and where somebody always stays to fix it. What follows is the proof — organized by craft, not by ego.</p>
       <ul class="intro-stats">
-<<<<<<< HEAD
         <li><span class="stat-num mono">43</span><span class="stat-label">students</span></li>
-=======
-        <li><span class="stat-num mono">44</span><span class="stat-label">students</span></li>
->>>>>>> f260063 (update)
         <li><span class="stat-num mono">10</span><span class="stat-label">leaders</span></li>
       </ul>
     </div>
   </section>
 
-  <!-- ============ SECTION 2-4: SHOWCASE ============ -->
+
+
+
   <section id="showcase" class="section showcase">
 
     <article class="showcase-row" data-discipline="programming">
@@ -137,7 +139,7 @@
       <div class="showcase-text">
         <h3>Class Portfolio</h3>
 <div class="portfolio-grid" id="portfolioGrid">
-      <!-- injected by js/profiles.js from data/profiles.json -->
+
     </div>
       </div>
     </article>
@@ -145,7 +147,9 @@
     
   </section>
 
-  <!-- ============ SECTION 5: MEET THE CLASS ============ -->
+
+
+
   <section id="class" class="section">
     <div class="section-head">
       <p class="eyebrow mono">// 05 — the class</p>
@@ -153,33 +157,41 @@
       <p class="section-sub">Forty-two students, twelve leaders. Tap a card.</p>
     </div>
     <div class="student-grid" id="studentGrid">
-      <!-- injected by js/profiles.js -->
+
     </div>
   </section>
 
-  <!-- ============ OFFICERS ============ -->
+
+
+
+
   <section id="officers" class="section alt-bg">
     <div class="section-head">
       <p class="eyebrow mono">// 06 — officers</p>
       <h2>Who runs the room</h2>
     </div>
     <div class="officer-grid" id="officerGrid">
-      <!-- injected by js/profiles.js -->
+
     </div>
   </section>
 
-  <!-- ============ TEACHERS ============ -->
+
+
+
+
   <section id="teachers" class="section">
     <div class="section-head">
       <p class="eyebrow mono">// 07 — teachers</p>
       <h2>Who taught the room</h2>
     </div>
     <div class="teacher-grid" id="teacherGrid">
-      <!-- injected by js/profiles.js -->
+
     </div>
   </section>
 
-<!-- ============ CONTACT ============ -->
+
+
+
 <section id="contact" class="section contact-section">
   <div class="section-head">
     <p class="eyebrow mono">// 08 — contact</p>
@@ -189,16 +201,17 @@
 
   <div class="contact-grid">
 
-    <!-- Tabs -->
+
     <div class="contact-tabs" role="tablist" aria-label="Contact recipient group">
       <button type="button" class="contact-tab active" data-target="teachers" role="tab" aria-selected="true">Teachers</button>
       <button type="button" class="contact-tab" data-target="officers" role="tab" aria-selected="false">Officers</button>
       <button type="button" class="contact-tab" data-target="developers" role="tab" aria-selected="false">Developers</button>
     </div>
 
-    <!-- =========================
-         TEACHERS FORM
-    ========================== -->
+
+
+
+
     <form
       class="contact-form contact-panel"
       id="teachersForm"
@@ -206,6 +219,7 @@
       action="https://formsubmit.co/5399e6b287d38aed0d6cf2f17d7aff0d"
       method="POST">
 
+      <input type="hidden" name="_next" value="grades.html">
       <input type="hidden" name="_captcha" value="false">
 
       <div class="form-row">
@@ -232,9 +246,8 @@
       <p class="form-status mono" role="status" aria-live="polite"></p>
     </form>
 
-    <!-- =========================
-         OFFICERS FORM
-    ========================== -->
+
+
     <form
       class="contact-form contact-panel is-hidden"
       id="officersForm"
@@ -280,9 +293,7 @@
       <p class="form-status mono" role="status" aria-live="polite"></p>
     </form>
 
-    <!-- =========================
-         DEVELOPERS FORM
-    ========================== -->
+
     <form
       class="contact-form contact-panel is-hidden"
       id="developersForm"
@@ -331,7 +342,7 @@
 
 </main>
 
-<!-- ============ PROJECT MODAL ============ -->
+
 <div class="modal" id="projectModal" aria-hidden="true">
   <div class="modal-backdrop" data-close></div>
   <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
@@ -344,7 +355,7 @@
   </div>
 </div>
 
-<!-- ============ PROFILE MODAL ============ -->
+
 <div class="modal" id="profileModal" aria-hidden="true">
   <div class="modal-backdrop" data-close></div>
   <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="profileModalName">
@@ -358,15 +369,38 @@
   </div>
 </div>
 
+
+
+
+
+
+
+
+
+
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+
 
 <script src="js/three-scene.js"></script>
 <script src="js/scroll.js"></script>
 <script src="js/profiles.js"></script>
 <script src="js/contact.js"></script>
 <script src="js/main.js"></script>
+
+
+
+
+
+
+
+
+
+
+
 
 
 <!--  

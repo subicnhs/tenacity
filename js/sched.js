@@ -31,11 +31,11 @@
       { "day": "", "subject": "Visual Graphics Design", "time": "12:40 PM — 5:50 PM", "sheet": "https://docs.google.com/spreadsheets/d/17PEV9mGlNpBAsGTJyFdF1eQqxSaFbE3SUzpBxlahqVs/edit?usp=sharing" }
     ],
     "term2": [
-      { "day": "Monday", "subject": "Programming", "time": "12:40 PM — 5:50 PM", "sheet": "" },
-      { "day": "Tuesday", "subject": "Programming", "time": "12:40 PM — 5:50 PM", "sheet": "" },
-      { "day": "Wednesday", "subject": "Programming", "time": "12:40 PM — 5:50 PM", "sheet": "" },
-      { "day": "Thursday", "subject": "Programming", "time": "12:40 PM — 5:50 PM", "sheet": "" },
-      { "day": "Friday", "subject": "Programming", "time": "12:40 PM — 5:50 PM", "sheet": "" }
+      { "day": "Monday", "subject": "Programming", "time": "12:40 PM — 5:50 PM", "sheet": "https://docs.google.com/spreadsheets/d/1HsN3dDLyzgP6H-GBctbPSyA8WUGf0QXEIlWP0-zlz-M/edit?usp=drivesdk" },
+      { "day": "Tuesday", "subject": "Programming", "time": "12:40 PM — 5:50 PM", "sheet": "https://docs.google.com/spreadsheets/d/1HsN3dDLyzgP6H-GBctbPSyA8WUGf0QXEIlWP0-zlz-M/edit?usp=drivesdk" },
+      { "day": "Wednesday", "subject": "Programming", "time": "12:40 PM — 5:50 PM", "sheet": "https://docs.google.com/spreadsheets/d/1HsN3dDLyzgP6H-GBctbPSyA8WUGf0QXEIlWP0-zlz-M/edit?usp=drivesdk" },
+      { "day": "Thursday", "subject": "Programming", "time": "12:40 PM — 5:50 PM", "sheet": "https://docs.google.com/spreadsheets/d/1HsN3dDLyzgP6H-GBctbPSyA8WUGf0QXEIlWP0-zlz-M/edit?usp=drivesdk" },
+      { "day": "Friday", "subject": "Programming", "time": "12:40 PM — 5:50 PM", "sheet": "https://docs.google.com/spreadsheets/d/1HsN3dDLyzgP6H-GBctbPSyA8WUGf0QXEIlWP0-zlz-M/edit?usp=drivesdk" }
     ],
     "term3": [
       { "day": "Monday - Friday", "subject": "Work Immersion", "time": "8:00 AM — 4:00 PM", "sheet": "" }

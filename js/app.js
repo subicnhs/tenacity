@@ -1,8 +1,5 @@
-<<<<<<< HEAD
 
 
-=======
->>>>>>> f260063 (update)
 /* =========================================================================
    3D ATTENDANCE DASHBOARD — APP LOGIC
    Data flow: JSON -> JS -> Attendance Calculation -> Filtering
@@ -190,8 +187,10 @@
   function renderCards(students) {
     const grid = document.getElementById("cardGrid");
     const emptyMsg = document.getElementById("directoryEmpty");
+    const emptyMSG = document.getElementById("directoryEmpty1");
     grid.innerHTML = "";
 
+    emptyMSG.hidden = students.length !== 0;
     emptyMsg.hidden = students.length !== 0;
     if (students.length === 0) return;
 

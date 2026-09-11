@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grade 12 Tenacity — Subic NHS</title>
+<meta name="description" content="The digital classroom hub of Grade 12 Tenacity, Subic National High School. Built by the class.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+<link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+
+<!-- ============ LOADER ============ -->
+<div id="loader" aria-hidden="true">
+  <div class="loader-inner">
+    <span class="loader-line">&gt; booting grade12_tenacity<span class="cursor">_</span></span>
+    <div class="loader-bar"><div class="loader-fill"></div></div>
+  </div>
+</div>
+
+<!-- ============ CANVAS (THREE.JS) ============ -->
+<canvas id="bg-canvas" aria-hidden="true"></canvas>
+
+<!-- ============ NAV ============  -->
+<header class="nav" id="nav">
+  <a class="nav-brand" href="#home">
+    <img src="photos/12T.png" alt="Subic NHS Logo" id="schoolLogo" class="nav-logo">
+    <span class="nav-brand-text"><span style="color:white;"> G12</span> <span style="color:#2BB7A3;">/</span> TENACITY</span>
+  </a>
+
+  <nav class="nav-links" id="navLinks">
+    <a href="index.html" data-i="00">Home</a>
+    <a href="https://tenacity-beta.vercel.app/#showcase" data-i="01">Projects</a>
+    <a href="https://tenacity-beta.vercel.app/#class" data-i="02">Students</a>
+    <a href="https://tenacity-beta.vercel.app/#officers" data-i="03">Officers</a>
+    <a href="https://tenacity-beta.vercel.app/#teachers" data-i="04">Teachers</a>
+    <a href="https://tenacity-beta.vercel.app/#contact" data-i="05">Contact</a>
+  </nav>
+
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<br>
+
+<main>
+
+
+<section id="contact" class="section contact-section">
+  <div class="section-head">
+    <p class="eyebrow mono">// contact</p>
+    <h2>Reach the creator!</h2>
+  </div>
+
+    <form
+      class="contact-form contact-panel"
+      id="teachersForm"
+      data-form="teachers"
+      action="https://formsubmit.co/5399e6b287d38aed0d6cf2f17d7aff0d"
+      method="POST">
+
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_cc" value="boggsruffa@gmail.com">
+      <input type="hidden" name="_subject" value="New submission!">
+      
+      <div class="form-row">
+        <label for="developer-name">Name</label>
+        <input type="text" id="developer-name" name="Name" required>
+      </div>
+
+      <div class="form-row">
+        <label for="developer-email">Email</label>
+        <input type="email" id="developer-email" name="Email" required>
+      </div>
+      
+      <div class="form-row">
+        <label for="user-report">Report an Issue?</label>
+        <select id="developer-team" name="Reporting an Issue" required>
+          <option style="opacity:50%;" value="none" hidden>Select an option</option>
+          <option value="Yes">Yes</option>
+          <option value="No">No</option>
+        </select>
+      </div>
+
+      <div class="form-row">
+        <label for="developer-team">Team</label>
+        <select id="developer-team" name="Team">
+          <option value="Web">Web Team</option>
+          <option value="Design">Design Team</option>
+          <option value="Animation">Animation Team</option>
+        </select>
+      </div>
+
+      <div class="form-row">
+        <label for="developer-message">Message</label>
+        <textarea id="developer-message" name="Message" rows="5" required></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Send Message</button>
+      <p class="form-status mono" role="status" aria-live="polite"></p>
+    </form>
+
+  </div>
+</section>
+
+  <footer class="site-footer">
+    <p class="mono">grade12_tenacity © 2026 — Subic National High School</p>
+    <p class="mono footer-sig">designed &amp; built by <a href="https://www.facebook.com/avebayland" >Abraham Bayland</a></p>
+  </footer>
+
+</main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+
+
+<script src="js/three-scene.js"></script>
+<script src="js/scroll.js"></script>
+<script src="js/profiles.js"></script>
+<script src="js/contact 1.js"></script>
+<script src="js/main.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--  
+  <section id="contact" class="section contact-section">
+    <div class="section-head">
+      <p class="eyebrow mono">// 08 — contact</p>
+      <h2>Reach the room</h2>
+      <p class="section-sub">Pick who you're trying to reach. We'll route it from there.</p>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-tabs" role="tablist" aria-label="Contact recipient group">
+        <button class="contact-tab active" data-target="teachers" role="tab" aria-selected="true">Teachers</button>
+        <button class="contact-tab" data-target="officers" role="tab" aria-selected="false">Officers</button>
+        <button class="contact-tab" data-target="developers" role="tab" aria-selected="false">Developers</button>
+      </div>
+
+      <form class="contact-form" id="contactForm" action="https://formsubmit.co/8ea112790aa24a275bf1e7e73f896fff" method="POST">
+        
+        
+        <input type="hidden" name="_captcha" value="false">
+        
+      
+        <input type="hidden" name="_autoresponse" value="We have received your response. We will be in touch very soon :>">
+        
+        <div class="form-row">
+          <label for="cf-name">Name</label>
+          <input type="text" id="cf-name" name="name" required autocomplete="name">
+        </div>
+        <div class="form-row">
+          <label for="cf-email">Email</label>
+          <input type="email" id="cf-email" name="email" required autocomplete="email">
+        </div>
+
+        <div class="form-row contact-recipient" data-group="teachers">
+          <label for="cf-recipient-teachers">Subject</label>
+          <input type="text" id="cf-recipient-teachers" name="subject" placeholder="What's this about?">
+        </div>
+
+        <div class="form-row contact-recipient is-hidden" data-group="officers">
+          <label for="cf-recipient-officers">Officer</label>
+          <select id="cf-recipient-officers" name="officer">
+            <option value="president">Class President</option>
+            <option value="vp">Vice President</option>
+            <option value="secretary">Secretary</option>
+            <option value="treasurer">Treasurer</option>
+            <option value="auditor">Auditor</option>
+            <option value="pio">P.I.O.</option>
+          </select>
+        </div>
+
+        <div class="form-row contact-recipient is-hidden" data-group="developers">
+          <label for="cf-recipient-developers">Team</label>
+          <select id="cf-recipient-developers" name="team">
+            <option value="web">Web Team</option>
+            <option value="design">Design Team</option>
+            <option value="animation">Animation Team</option>
+          </select>
+        </div>
+
+        <div class="form-row">
+          <label for="cf-message">Message</label>
+          <textarea id="cf-message" name="message" rows="5" required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Send message</button>
+        <p class="form-status mono" id="formStatus" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>-->
+</body>
+</html>

@@ -60,17 +60,13 @@
     ],
 
   "teachers": [
-    {"name":"Ms. Jane Pansacula","role":"Adviser","skills":["Computer System Servicing","Basic Networking"],"bio":"'Wag ka makulit Abraham","links":[]},
+    {"photo":"photos/jeremy.jpg", "name":"Ms. Jane Pansacula","role":"Adviser","skills":["Computer System Servicing","Basic Networking"],"bio":"'Wag ka makulit Abraham","links":[]},
     {"name":"Mr. Joshua Brien Penuela","role":"Subject Teacher","skills":["Web Development","Programming","Computer System Servicing","Basic Networking"],"bio":"Matuto dapat kayo","links":[]},
     {"name":"Mr. Jeremiah Ramos","role":"Subject Teacher","skills":["Graphics Design","Programming","Web Development","Animation"],"bio":"Ge","links":[]}
   ],
 
   "projects": [
-<<<<<<< HEAD
     {"title":"Class Attendance Tracker","category":"Tenacity","description":"An online spreadsheet the class actually uses to log daily attendance and view monthly summaries using Google Sheets.","meta":"JavaScript · Google Sheets · .JSON",   "link":"attendance.html"},
-    {"title":"Class Grading System Tracker","category":"Tenacity","description":"A live preview of each subject's grading system for the students of tenacity.","meta":"JavaScript · Google Sheets · .JSON",   "link":"info.html"}
-=======
-    {"title":"Class Attendance Tracker","category":"Tenacity","description":"A lightweight web app the class actually uses to log daily attendance and export weekly summaries.","meta":"JavaScript · Google Sheets · .JSON",   "link":"attendance.html"}
->>>>>>> f260063 (update)
+    {"title":"Class Grading System Tracker","category":"Tenacity","description":"A live preview of each subject's grading system for the students of tenacity.","meta":"JavaScript · Google Sheets · .JSON",   "link":"grades.html"}
   ]
 }
