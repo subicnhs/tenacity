@@ -88,6 +88,7 @@ img { max-width: 100%; display: block; }
   }
 }
 
+<<<<<<< HEAD
 .popup {
   position: fixed;
   bottom: 40px;
@@ -115,6 +116,8 @@ img { max-width: 100%; display: block; }
   background: #ef4444;
   box-shadow: 0px 10px 30px #ef44444d;
 }
+=======
+>>>>>>> f260063 (update)
 /* ---------------------------------------------------------------------- */
 /* Ambient 3D background scene                                             */
 /* ---------------------------------------------------------------------- */
@@ -192,7 +195,11 @@ img { max-width: 100%; display: block; }
 /* ---------------------------------------------------------------------- */
 .site-header {
   position: sticky;
+<<<<<<< HEAD
   top: 0%;
+=======
+  top: 0;
+>>>>>>> f260063 (update)
   z-index: 50;
   backdrop-filter: blur(14px);
   background: rgba(11, 18, 32, 0.72);

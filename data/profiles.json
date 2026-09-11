@@ -66,7 +66,11 @@
   ],
 
   "projects": [
+<<<<<<< HEAD
     {"title":"Class Attendance Tracker","category":"Tenacity","description":"An online spreadsheet the class actually uses to log daily attendance and view monthly summaries using Google Sheets.","meta":"JavaScript · Google Sheets · .JSON",   "link":"attendance.html"},
     {"title":"Class Grading System Tracker","category":"Tenacity","description":"A live preview of each subject's grading system for the students of tenacity.","meta":"JavaScript · Google Sheets · .JSON",   "link":"info.html"}
+=======
+    {"title":"Class Attendance Tracker","category":"Tenacity","description":"A lightweight web app the class actually uses to log daily attendance and export weekly summaries.","meta":"JavaScript · Google Sheets · .JSON",   "link":"attendance.html"}
+>>>>>>> f260063 (update)
   ]
 }
