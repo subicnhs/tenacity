@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cyber Finger Frame</title>
+
+    <link rel="stylesheet" href="lol5.css">
+</head>
+
+<body>
+
+<div id="app">
+
+    <video id="video" autoplay muted playsinline></video>
+
+    <canvas id="canvas"></canvas>
+
+    <div id="filterOverlay"></div>
+
+    <div class="scanlines"></div>
+    <div class="vignette"></div>
+
+    <div class="hud top-left">
+        CYBER FRAME // ACTIVE
+    </div>
+
+    <div class="hud top-right">
+
+        <div class="small">
+            CAMERA NODE / 02
+        </div>
+
+        <div class="big">
+            SUBJECT<br>
+            DETECTION
+        </div>
+
+        <div id="filterStatus">
+            FILTER / NORMAL
+        </div>
+
+    </div>
+
+    <div class="bottom-left">
+        ● CYBER FRAME ACTIVE
+    </div>
+
+    <div id="startScreen">
+
+        <div class="startBox">
+
+            <h1>CYBER FRAME</h1>
+
+            <p>
+                Place your hand inside the frame.
+                Touch your pinky finger to your thumb
+                to change the visual filter inside
+                the tracked box.
+            </p>
+
+            <button id="start">
+                INITIALIZE CAMERA
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js"></script>
+<script src="lol5.js"></script>
+
+</body>
+</html>

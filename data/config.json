@@ -1,6 +1,10 @@
 {
   "googleSheets": {
+<<<<<<< HEAD
     "url": "update.html",
+=======
+    "url": "https://docs.google.com/spreadsheets/d/1Aih1H2Tc8MZzZgsIg81RAxkJTEw2chaA/edit?usp=sharing&ouid=100087618129283754297&rtpof=true&sd=true",
+>>>>>>> d63ff79c8938f5e144e8a231593fb32d05a274ec
     "_comment": "Paste a Google Sheets VIEW-ONLY / published-to-web URL above (File > Share > Publish to web, or the '/pubhtml' link). Leave empty to show the placeholder card."
   },
   "schoolYear": "S.Y. 2026\u20132027",

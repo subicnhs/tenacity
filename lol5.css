@@ -1,0 +1,396 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: #000;
+    font-family: "Courier New", monospace;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#app {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background: #000;
+}
+
+#video {
+    position: absolute;
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transform: scaleX(-1);
+
+    filter:
+        brightness(.82)
+        contrast(1.08)
+        saturate(.85);
+}
+
+#canvas {
+    position: absolute;
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    pointer-events: none;
+}
+
+/* =========================================================
+   FILTER LAYER
+
+   This layer ONLY appears inside the tracked box.
+========================================================= */
+
+#filterOverlay {
+    position: absolute;
+
+    pointer-events: none;
+
+    z-index: 2;
+
+    opacity: 0;
+
+    mix-blend-mode: normal;
+
+    /*
+       The actual shape and position are controlled
+       dynamically by JavaScript.
+    */
+
+    filter: none;
+
+    background: transparent;
+
+    transition:
+        opacity .25s ease,
+        filter .25s ease,
+        background .25s ease;
+}
+
+
+/* =========================================================
+   FILTER MODES
+========================================================= */
+
+/* Inverted */
+
+#filterOverlay.invert {
+    filter: invert(1);
+
+    background:
+        rgba(255,255,255,.08);
+
+    opacity: .95;
+}
+
+
+/* Black & White */
+
+#filterOverlay.bw {
+    filter:
+        grayscale(1)
+        contrast(1.35);
+
+    background:
+        rgba(255,255,255,.04);
+
+    opacity: .95;
+}
+
+
+/* Negative / Cyber */
+
+#filterOverlay.negative {
+    filter:
+        invert(1)
+        hue-rotate(180deg)
+        saturate(1.4);
+
+    background:
+        rgba(0,255,255,.08);
+
+    opacity: .95;
+}
+
+
+/* Red */
+
+#filterOverlay.red {
+    filter:
+        sepia(1)
+        saturate(7)
+        hue-rotate(315deg)
+        contrast(1.15);
+
+    background:
+        rgba(255,0,0,.08);
+
+    opacity: .9;
+}
+
+
+/* Blue */
+
+#filterOverlay.blue {
+    filter:
+        sepia(1)
+        saturate(6)
+        hue-rotate(150deg)
+        contrast(1.15);
+
+    background:
+        rgba(0,100,255,.08);
+
+    opacity: .9;
+}
+
+
+/* =========================================================
+   SCANLINES
+========================================================= */
+
+.scanlines {
+    position: absolute;
+    inset: 0;
+
+    z-index: 5;
+
+    pointer-events: none;
+
+    background:
+        repeating-linear-gradient(
+            0deg,
+            rgba(0,255,255,.035) 0px,
+            rgba(0,255,255,.035) 1px,
+            transparent 1px,
+            transparent 5px
+        );
+}
+
+
+/* =========================================================
+   VIGNETTE
+========================================================= */
+
+.vignette {
+    position: absolute;
+    inset: 0;
+
+    z-index: 5;
+
+    pointer-events: none;
+
+    background:
+        radial-gradient(
+            ellipse at center,
+            transparent 45%,
+            rgba(0,0,0,.3) 75%,
+            rgba(0,0,0,.85) 100%
+        );
+}
+
+
+/* =========================================================
+   HUD
+========================================================= */
+
+.hud {
+    position: absolute;
+
+    z-index: 10;
+
+    color: #b9ffff;
+
+    pointer-events: none;
+
+    text-shadow:
+        0 0 8px #00eaff;
+}
+
+.top-left {
+    top: 8%;
+    left: 8%;
+
+    font-size: 10px;
+
+    letter-spacing: 1px;
+}
+
+.top-right {
+    top: 14%;
+    right: 8%;
+
+    width: 155px;
+
+    padding: 16px;
+
+    background:
+        rgba(4,18,27,.8);
+
+    border-left:
+        2px solid #00eaff;
+
+    clip-path:
+        polygon(
+            10% 0,
+            100% 0,
+            100% 100%,
+            0 100%,
+            0 12%
+        );
+}
+
+.top-right .small {
+    font-size: 7px;
+
+    color: #67aab1;
+
+    margin-bottom: 12px;
+}
+
+.top-right .big {
+    color: white;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+}
+
+#filterStatus {
+    margin-top: 12px;
+
+    font-size: 7px;
+
+    color: #67aab1;
+
+    letter-spacing: .5px;
+}
+
+
+/* =========================================================
+   BOTTOM HUD
+========================================================= */
+
+.bottom-left {
+    position: absolute;
+
+    z-index: 10;
+
+    left: 5%;
+    bottom: 8%;
+
+    color: #00eaff;
+
+    font-size: 8px;
+
+    letter-spacing: 1px;
+}
+
+
+/* =========================================================
+   START SCREEN
+========================================================= */
+
+#startScreen {
+    position: absolute;
+
+    z-index: 100;
+
+    inset: 0;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    background: #020607;
+}
+
+.startBox {
+    width: min(90%, 400px);
+
+    padding: 35px;
+
+    text-align: center;
+
+    color: #00eaff;
+
+    border:
+        1px solid #00eaff;
+
+    box-shadow:
+        0 0 30px rgba(0,234,255,.15),
+        inset 0 0 30px rgba(0,234,255,.03);
+}
+
+.startBox h1 {
+    font-size: 20px;
+
+    letter-spacing: 4px;
+
+    margin:
+        0 0 15px;
+}
+
+.startBox p {
+    color: #8aa8ad;
+
+    font-size: 11px;
+
+    line-height: 1.7;
+}
+
+button {
+    margin-top: 15px;
+
+    padding:
+        12px 25px;
+
+    color: #00eaff;
+
+    background:
+        transparent;
+
+    border:
+        1px solid #00eaff;
+
+    font-family:
+        inherit;
+
+    cursor:
+        pointer;
+}
+
+button:hover {
+    color: #001014;
+
+    background:
+        #00eaff;
+
+    box-shadow:
+        0 0 25px #00eaff;
+}
+
+.hidden {
+    display: none !important;
+}
