@@ -1,5 +1,10 @@
+Google Sheets Links:
+
 VGD
 https://docs.google.com/spreadsheets/d/17PEV9mGlNpBAsGTJyFdF1eQqxSaFbE3SUzpBxlahqVs/edit?usp=sharing
 
 Programming
 https://docs.google.com/spreadsheets/d/1HsN3dDLyzgP6H-GBctbPSyA8WUGf0QXEIlWP0-zlz-M/edit?usp=drivesdk
+
+Attendance
+https://docs.google.com/spreadsheets/d/1Aih1H2Tc8MZzZgsIg81RAxkJTEw2chaA/edit?usp=sharing&ouid=100087618129283754297&rtpof=true&sd=true
