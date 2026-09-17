@@ -1,6 +1,6 @@
 {
   "students": [
-    {"name":"Agoyaoy, Zycie Luena","photo":"photos/12T.png","role":"ICT Student","skills":["Skills"],"bio":"Wala lang.","links":[{"label":"Facebook","url":"https://www.facebook.com/share/1BMBffbcjv/"},{"label":"Instagram","url":"https://www.instagram.com/urfav_zyyx?igsh=MTM3MTM2bzh6YjhzMQ=="}]},
+    {"name":"Agoyaoy, Zycie Luena","role":"ICT Student","skills":["Skills"],"bio":"Wala lang.","links":[{"label":"Facebook","url":"https://www.facebook.com/share/1BMBffbcjv/"},{"label":"Instagram","url":"https://www.instagram.com/urfav_zyyx?igsh=MTM3MTM2bzh6YjhzMQ=="}]},
     {"name":"Avelino, Leslie Cortez","role":"ICT Student","skills":["Skills"],"bio":"Random na tao lang.","links":[{"label":"Facebook","url":"https://www.facebook.com/share/176Sy1esZD/"},{"label":"Instagram","url":"https://www.instagram.com/lexlyyluv?igsh=dTIxNTJmbmZraHhm"}]},
     {"name":"Barambangan, Alaisah Doming","role":"ICT Student","skills":["Skills"],"bio":"Bio malamang.","links":[{"label":"Facebook","url":"https://www.facebook.com/share/1EKh1555br/"}]},
     {"name":"Bonifacio, Jasmine Rose Laquian","role":"ICT Student","skills":["President"],"bio":"MWAAHAHAHAHAH.","links":[{"label":"Facebook","url":"https://www.facebook.com/share/1ENk6Ky73Y/"}]},
@@ -13,7 +13,7 @@
     {"name":"Vidal, Jenny Romanban","role":"ICT Student","skills":["Skills"],"bio":"Self Initiate.","links":[{"label":"Facebook","url":"https://www.facebook.com/share/1DmiZv48qQ/"},{"label":"Instagram","url":"https://www.instagram.com/dreiiah0lic?igsh=NmZnOXQ5MHh0OXN2"}]},
     {"name":"Aceron, Klyde Dylan Pereyra","role":"ICT Student","skills":["Stand-up Comedian"],"bio":"Lakad magdamag","links":[{"label":"Facebook","url":"https://www.facebook.com/share/18yJUwgpSq/"}]},
     {"name":"Alteza, Emanuel John Garcia","role":"ICT Student","skills":["Skills"],"bio":"Random.","links":[{"label":"Facebook","url":"https://www.facebook.com/share/1BNh1LRK83/"},{"label":"Instagram","url":"https://www.instagram.com/spottedmilkshake?igsh=YWg5N3ExeW82Z2dp"}]},
-    {"name":"Bayland, Abraham","photo":"photos/abraham.jpeg","role":"ICT Student","skills":["Data Analyst","System Specialist","Student-leader","Programmer","Computer Specialist"],"bio":"Go lang ng Go!","links":[{"label":"Facebook","url":"https://www.facebook.com/avebayland/"},{"label":"Instagram","url":"https://www.instagram.com/avebayland"}]},
+    {"name":"Bayland, Abraham","role":"ICT Student","skills":["Data Analyst","System Specialist","Student-leader","Programmer","Computer Specialist"],"bio":"Go lang ng Go!","links":[{"label":"Facebook","url":"https://www.facebook.com/avebayland/"},{"label":"Instagram","url":"https://www.instagram.com/avebayland"}]},
     {"name":"Betana, Raevin Dorol","role":"ICT Student","skills":["Skills"],"bio":"","links":[]},
     {"name":"Bornel, Shaun Rainier Eroles","role":"ICT Student","skills":["Skills"],"bio":"","links":[]},
     {"name":"Cabasaran, Rayan Condayo","role":"ICT Student","skills":["Skills"],"bio":"","links":[]},
