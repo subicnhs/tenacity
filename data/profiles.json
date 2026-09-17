@@ -60,7 +60,7 @@
     ],
 
   "teachers": [
-    {"photo":"photos/jeremy.jpg", "name":"Ms. Jane Pansacula","role":"Adviser","skills":["Computer System Servicing","Basic Networking"],"bio":"'Wag ka makulit Abraham","links":[]},
+    {"name":"Ms. Jane Pansacula","role":"Adviser","skills":["Computer System Servicing","Basic Networking"],"bio":"'Wag ka makulit Abraham","links":[]},
     {"name":"Mr. Joshua Brien Penuela","role":"Subject Teacher","skills":["Web Development","Programming","Computer System Servicing","Basic Networking"],"bio":"Matuto dapat kayo","links":[]},
     {"name":"Mr. Jeremiah Ramos","role":"Subject Teacher","skills":["Graphics Design","Programming","Web Development","Animation"],"bio":"Ge","links":[]}
   ],
