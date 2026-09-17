@@ -1,0 +1,23 @@
+{
+  "terms": {
+    "term1": [
+      { "day": "Monday", "subject": "Visual Graphics Design", "time": "12:40 PM — 5:50 PM", "sheet": "update.html" },
+      { "day": "Tuesday", "subject": "Visual Graphics Design", "time": "12:40 PM — 5:50 PM", "sheet": "update.html" },
+      { "day": "Wednesday", "subject": "Visual Graphics Design", "time": "12:40 PM — 5:50 PM", "sheet": "update.html" },
+      { "day": "Thursday", "subject": "Visual Graphics Design", "time": "12:40 PM — 4:50 PM", "sheet": "update.html" },
+      { "day": "", "subject": "ARAL Program", "time": "4:50 PM — 5:50 PM", "sheet": "update.html" },
+      { "day": "Friday", "subject": "HRG", "time": "11:40 AM — 12:40PM", "sheet": "update.html" },
+      { "day": "", "subject": "Visual Graphics Design", "time": "12:40 PM — 5:50 PM", "sheet": "update.html" }
+    ],
+"term2": [
+      { "day": "Monday", "subject": "Programming", "time": "12:40 PM — 5:50 PM", "sheet": "update.html" },
+      { "day": "Tuesday", "subject": "Programming", "time": "12:40 PM — 5:50 PM", "sheet": "update.html" },
+      { "day": "Wednesday", "subject": "Programming", "time": "12:40 PM — 5:50 PM", "sheet": "update.html" },
+      { "day": "Thursday", "subject": "Programming", "time": "12:40 PM — 5:50 PM", "sheet": "update.html" },
+      { "day": "Friday", "subject": "Programming", "time": "12:40 PM — 5:50 PM", "sheet": "update.html" }
+    ],
+    "term3": [
+      { "day": "Monday - Friday", "subject": "Work Immersion", "time": "8:00 AM — 4:00 PM", "sheet": "update.html" }
+    ]
+  }
+}

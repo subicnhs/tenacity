@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Attendance — 3D Student Dashboard</title>
+<meta name="description" content="A responsive 3D attendance dashboard for monitoring student attendance, identifying perfect attendance, and viewing student profiles.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/reponsive.css">
+<link rel="icon" type="image/png" href="photos/12T.png">
+<!--<link rel="stylesheet" href="css/style.css">-->
+</head>
+<body>
+  
+<div class="popup" id="popup"></div>
+
+<!-- Skip link for keyboard / screen-reader users -->
+<a class="skip-link" href="#directory">Skip to student directory</a>
+
+<!-- ================= BACKGROUND (3D ambient scene) ================= -->
+<div class="bg-scene" aria-hidden="true">
+  <div class="bg-grid"></div>
+  <div class="bg-glow bg-glow--gold"></div>
+  <div class="bg-glow bg-glow--teal"></div>
+  <div class="bg-ring bg-ring--1"></div>
+  <div class="bg-ring bg-ring--2"></div>
+  <div class="bg-shape bg-shape--1"></div>
+  <div class="bg-shape bg-shape--2"></div>
+  <div class="bg-shape bg-shape--3"></div>
+</div>
+
+<!-- ================= HEADER ================= -->
+<header class="site-header">
+  <div class="header-inner">
+      <div class="brand">
+    <img class="brand-mark" src="photos/12T.png" aria-hidden="true"></img>
+<!--<span class="brand-mark-ring"></span>-->
+
+  
+      
+      <div class="brand-text">
+        <span class="brand-eyebrow">ATTENDANCE</span>
+        <span class="brand-title">STUDENT DASHBOARD</span>
+      </div>
+    </div>
+    <div class="live-clock" id="liveClock" role="status" aria-live="polite">
+      <span class="live-dot" aria-hidden="true"></span>
+      <span class="live-time" id="liveTime">00:00:00</span>
+    </div>
+  </div>
+</header>
+
+<main>
+  <!-- ================= HERO ================= -->
+  <section class="heroA" aria-labelledby="hero-heading">
+    <div class="hero-innerA">
+      <p class="hero-eyebrowA" id="schoolYearLabel">S.Y. 2026–2027 · CLASS ATTENDANCE</p>
+      <h1 class="hero-headingA" id="hero-heading">Attendance in depth.</h1>
+      <p class="hero-descriptionA">
+        A responsive 3D attendance dashboard for monitoring student attendance,
+        identifying perfect attendance, and viewing student profiles.
+      </p>
+    </div>
+
+    <!-- Signature element: rotating day-ring representing the school-day cycle -->
+    <div class="day-ring" id="dayRing" aria-hidden="true">
+      <div class="day-ring-inner"></div>
+    </div>
+  </section>
+
+  <!-- ================= DASHBOARD STATISTICS ================= -->
+  <section class="stats" aria-label="Dashboard statistics">
+    <div class="stats-grid">
+      <article class="stat-card stat-card--total">
+        <span class="stat-label">Total Students</span>
+        <span class="stat-value" id="statotal">43</span>
+      </article>
+      <article class="stat-card stat-card--perfect">
+        <span class="stat-label">Perfect Attendance</span>
+        <span class="stat-value" id="statPerfect">0</span>
+      </article>
+      <article class="stat-card stat-card--attention">
+        <span class="stat-label">Need Attention</span>
+        <span class="stat-value" id="statAttention">0</span>
+      </article>
+    </div>
+  </section>
+
+  <!-- ================= STUDENT DIRECTORY ================= -->
+  <section class="directory" id="directory" aria-labelledby="directory-heading">
+    <div class="section-heading">
+      <span class="section-eyebrow">STUDENT DIRECTORY</span>
+      <h2 class="section-title" id="directory-heading">Attendance Profiles</h2>
+    </div>
+
+    <div class="filters" role="group" aria-label="Filter students by attendance status">
+      <button type="button" class="filter-btn is-active" data-filter="all" aria-pressed="true">All</button>
+      <button type="button" class="filter-btn" data-filter="perfect" aria-pressed="false">Perfect</button>
+      <button type="button" class="filter-btn" data-filter="attention" aria-pressed="false">Needs Attention</button>
+    </div>
+
+    <p class="directory-empty1" id="directoryEmpty1" hidden><span class="error">ERROR</span>. Failed to record. Maybe check your Google Sheets on <span class="month">August</span>? <br> Error id: 13981793809952790589</p>
+    
+    <p class="directory-empty" id="directoryEmpty" hidden>September's attendance is active! Will record on <span class="date">September 30, 2026</span>! See you soon!</p>
+
+    <div class="card-grid" id="cardGrid" aria-live="polite"></div>
+  </section>
+
+  <!-- ================= GOOGLE SHEETS ================= -->
+  <section class="sheets" aria-labelledby="sheets-heading">
+    <div class="section-heading">
+      <span class="section-eyebrow">LIVE REFERENCE</span>
+      <h2 class="section-title" id="sheets-heading">Google Sheets</h2>
+    </div>
+
+    <div class="sheets-panel" id="sheetsPanel">
+      <!-- Populated by JS: either an iframe or the placeholder -->
+    </div>
+  </section>
+</main>
+
+<!-- ================= STUDENT PROFILE MODAL ================= -->
+<div class="modal-backdrop" id="modalBackdrop" hidden>
+  <div class="modal" id="studentModal" role="dialog" aria-modal="true" aria-labelledby="modalName">
+    <button type="button" class="modal-close" id="modalClose" aria-label="Close student profile">
+      <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false">
+        <path d="M6 6L18 18M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+    </button>
+
+    <p class="modal-status-flag" id="modalPerfectFlag" hidden>PERFECT ATTENDANCE</p>
+
+    <div class="modal-photo-stage">
+      <div class="modal-photo" id="modalPhoto"></div>
+    </div>
+
+    <h3 class="modal-name" id="modalName">Student Name</h3>
+    <p class="modal-meta" id="modalMeta">Grade · Section · ID</p>
+
+    <dl class="modal-stats">
+      <div class="modal-stat">
+        <dt>Status Today</dt>
+        <dd id="modalToday">—</dd>
+      </div>
+      <div class="modal-stat">
+        <dt>Present</dt>
+        <dd id="modalPresent">—</dd>
+      </div>
+      <div class="modal-stat">
+        <dt>Absent</dt>
+        <dd id="modalAbsent">—</dd>
+      </div>
+      <div class="modal-stat">
+        <dt>Attendance Rate</dt>
+        <dd id="modalRate">—</dd>
+      </div>
+    </dl>
+
+    <div class="modal-progress">
+      <div class="modal-progress-fill" id="modalProgressFill"></div>
+    </div>
+  </div>
+</div>
+
+<!-- ================= FOOTER ================= -->
+ <footer class="site-footer">
+    <p class="mono">grade12_tenacity © 2026 — Subic National High School</p>
+    <p class="footer-sig">designed &amp; built by <a href="https://www.facebook.com/avebayland" >Abraham Bayland</a></p>
+  </footer>
+
+<!--<footer class="site-footer">
+  <p class="footer-title">3D Attendance MVP</p>
+  <p class="footer-sub">HTML · CSS · JavaScript · JSON</p>
+</footer>-->
+
+<script src="js/app.js"></script>
+<script src="js/net.js"></script>
+<script src="js/all.js"></script>
+</body>
+</html>

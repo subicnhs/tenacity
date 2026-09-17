@@ -1,0 +1,140 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background: #0f1117;
+  color: #e0e2eb;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 24px;
+}
+
+/* Generic flex column wrapper used by most lessons */
+.demo {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  max-width: 520px;
+}
+
+/* Row: label + animated element side by side */
+.row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  height: 40px;
+}
+
+.lbl {
+  font-size: 0.75rem;
+  color: #7a7f9a;
+  font-family: 'Fira Mono', 'Cascadia Code', monospace;
+  width: 160px;
+  flex-shrink: 0;
+}
+
+/* ── Shapes ─────────────────────────────────────────────────────────────── */
+
+.box {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.ball {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #7c6af7;
+  flex-shrink: 0;
+}
+
+.cyan   { background: #45aaf2; }
+.pink   { background: #fc5c65; }
+.amber  { background: #f7b731; }
+.lime   { background: #26de81; }
+.purple { background: #a55eea; }
+.red    { background: #fc5c65; }
+
+/* ── Timeline boxes ─────────────────────────────────────────────────────── */
+
+.tl-box {
+  width: 42px;
+  height: 42px;
+  border-radius: 8px;
+  background: #3d405b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: #fff;
+  flex-shrink: 0;
+}
+
+/* ── Stagger grid ───────────────────────────────────────────────────────── */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(8, 32px);
+  gap: 6px;
+}
+
+.cell {
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  background: #7c6af7;
+  opacity: 0;
+}
+
+/* ── Blob ───────────────────────────────────────────────────────────────── */
+
+#blob {
+  width: 70px;
+  height: 70px;
+  background: #fc5c65;
+  border-radius: 12px;
+}
+
+/* ── Controls (lesson 7) ────────────────────────────────────────────────── */
+
+.ctrl-track {
+  width: 100%;
+  max-width: 440px;
+  height: 52px;
+  background: #1a1d27;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  padding: 0 8px;
+  overflow: hidden;
+}
+
+.ctrl-buttons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.ctrl-buttons button {
+  padding: 9px 20px;
+  border: 1px solid #2a2d3a;
+  border-radius: 7px;
+  background: #1a1d27;
+  color: #e0e2eb;
+  cursor: pointer;
+  font-size: 0.88rem;
+  transition: background 0.15s;
+}
+.ctrl-buttons button:hover { background: #2a2d3a; }
+
+.ctrl-status {
+  font-family: monospace;
+  font-size: 0.82rem;
+  color: #7a7f9a;
+}

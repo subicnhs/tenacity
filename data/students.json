@@ -1,0 +1,124 @@
+/*{
+  "students": [
+    {
+      "id": "TEN-001",
+      "name": "Alex Rivera",
+      "section": "Grade 12 Tenacity",
+      "profile": "",
+      "present": 22,
+      "total": 22,
+      "absent": 0,
+      "today": "Present"
+    },
+    {
+      "id": "TEN-002",
+      "name": "Maria Santos",
+      "section": "Grade 12 Tenacity",
+      "profile": "",
+      "present": 20,
+      "total": 22,
+      "absent": 2,
+      "today": "Present"
+    },
+    {
+      "id": "TEN-003",
+      "name": "Liam Cruz",
+      "section": "Grade 12 Tenacity",
+      "profile": "",
+      "present": 22,
+      "total": 22,
+      "absent": 0,
+      "today": "Present"
+    },
+    {
+      "id": "TEN-004",
+      "name": "Emma Aquino",
+      "section": "Grade 12 Tenacity",
+      "profile": "",
+      "present": 22,
+      "total": 22,
+      "absent": 0,
+      "today": "Present"
+    },
+    {
+      "id": "DIL-001",
+      "name": "Sophia Bautista",
+      "section": "Grade 11 Diligence",
+      "profile": "",
+      "present": 15,
+      "total": 22,
+      "absent": 7,
+      "today": "Absent"
+    },
+    {
+      "id": "DIL-002",
+      "name": "Noah Garcia",
+      "section": "Grade 11 Diligence",
+      "profile": "",
+      "present": 21,
+      "total": 22,
+      "absent": 1,
+      "today": "Present"
+    },
+    {
+      "id": "DIL-003",
+      "name": "Isabella Reyes",
+      "section": "Grade 11 Diligence",
+      "profile": "",
+      "present": 22,
+      "total": 22,
+      "absent": 0,
+      "today": "Present"
+    },
+    {
+      "id": "DIL-004",
+      "name": "Ethan Delacruz",
+      "section": "Grade 11 Diligence",
+      "profile": "",
+      "present": 17,
+      "total": 22,
+      "absent": 5,
+      "today": "Present"
+    },
+    {
+      "id": "RES-001",
+      "name": "Ava Mendoza",
+      "section": "Grade 10 Resilience",
+      "profile": "",
+      "present": 19,
+      "total": 22,
+      "absent": 3,
+      "today": "Present"
+    },
+    {
+      "id": "RES-002",
+      "name": "Mason Torres",
+      "section": "Grade 10 Resilience",
+      "profile": "",
+      "present": 22,
+      "total": 22,
+      "absent": 0,
+      "today": "Present"
+    },
+    {
+      "id": "RES-003",
+      "name": "Mia Fernandez",
+      "section": "Grade 10 Resilience",
+      "profile": "",
+      "present": 14,
+      "total": 22,
+      "absent": 8,
+      "today": "Absent"
+    },
+    {
+      "id": "RES-004",
+      "name": "Lucas Villanueva",
+      "section": "Grade 10 Resilience",
+      "profile": "",
+      "present": 20,
+      "total": 22,
+      "absent": 2,
+      "today": "Present"
+    }
+  ]
+}*/
