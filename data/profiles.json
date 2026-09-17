@@ -1,6 +1,6 @@
 {
   "students": [
-    {"photo":"photos/12T.png","name":"Agoyaoy, Zycie Luena","role":"ICT Student","skills":["Skills"],"bio":"Wala lang.","links":[{"label":"Facebook","url":"https://www.facebook.com/share/1BMBffbcjv/"},{"label":"Instagram","url":"https://www.instagram.com/urfav_zyyx?igsh=MTM3MTM2bzh6YjhzMQ=="}]},
+    {"name":"Agoyaoy, Zycie Luena","role":"ICT Student","skills":["Skills"],"bio":"Wala lang.","links":[{"label":"Facebook","url":"https://www.facebook.com/share/1BMBffbcjv/"},{"label":"Instagram","url":"https://www.instagram.com/urfav_zyyx?igsh=MTM3MTM2bzh6YjhzMQ=="}]},
     {"name":"Avelino, Leslie Cortez","role":"ICT Student","skills":["Skills"],"bio":"Random na tao lang.","links":[{"label":"Facebook","url":"https://www.facebook.com/share/176Sy1esZD/"},{"label":"Instagram","url":"https://www.instagram.com/lexlyyluv?igsh=dTIxNTJmbmZraHhm"}]},
     {"name":"Barambangan, Alaisah Doming","role":"ICT Student","skills":["Skills"],"bio":"Bio malamang.","links":[{"label":"Facebook","url":"https://www.facebook.com/share/1EKh1555br/"}]},
     {"name":"Bonifacio, Jasmine Rose Laquian","role":"ICT Student","skills":["President"],"bio":"MWAAHAHAHAHAH.","links":[{"label":"Facebook","url":"https://www.facebook.com/share/1ENk6Ky73Y/"}]},
